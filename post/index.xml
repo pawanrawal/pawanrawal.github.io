@@ -19,11 +19,35 @@
 
 &lt;p&gt;There are multitude of ways of setting up your blog, you could set it up on Wordpress or just write posts on Medium. The method that I am going to outline below would mostly suit developers.&lt;/p&gt;
 
-&lt;p&gt;Sometime ago I came across this &lt;a href=&#34;https://medium.freecodecamp.com/domain-registrars-dns-and-hosting-353e4163a19#.b3jca1giu&#34;&gt;post&lt;/a&gt; on Medium. Its an excellent post which outlines the various steps needed to setup your blog. I will reiterate those points here for you.&lt;/p&gt;
+&lt;p&gt;Sometime ago I came across this &lt;a href=&#34;https://medium.freecodecamp.com/domain-registrars-dns-and-hosting-353e4163a19#.b3jca1giu&#34;&gt;post&lt;/a&gt; on Medium. Its an excellent post which outlines the various steps needed to setup your website.&lt;/p&gt;
 
-&lt;ul&gt;
-&lt;li&gt;Get a domain name - I had bought my domain from Go Daddy, but then I transferred it to namecheap because the UI is much easier to work with.&lt;/li&gt;
-&lt;/ul&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;I bought my domain from namecheap.com&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Added my site to Cloudflare&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Used custom DNS on Namecheap to point mysite to Cloudflare nameservers&lt;/p&gt;
+
+&lt;p&gt;For the above steps you can follow the instructions to the post I linked to above.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Setup Github pages - I didn&amp;rsquo;t want to host the site myself, Github Pages looked simple and seemed to fit my use case.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Setup Hugo - For my blog, I am using &lt;a href=&#34;https://gohugo.io/&#34;&gt;Hugo&lt;/a&gt;, a static Web Engine written in Golang. It has some pretty cool themes. I am using &lt;a href=&#34;https://github.com/digitalcraftsman/hugo-cactus-theme&#34;&gt;hugo-cactus-theme&lt;/a&gt; for my blog. Hugo has a bunch of cool features. It has a built in hot reload, where you can preview the changes locally as soon as you make any changes.&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;To integrate Hugo with Github Pages, I followed this &lt;a href=&#34;https://gohugo.io/tutorials/github-pages-blog/#hosting-personal-organization-pages&#34;&gt;tutorial&lt;/a&gt; on the Hugo website. Github Pages has options for a Project or Organization/Users site. I am using the Users site, so I followed the simpler instructions for hosting personal pages. It involves setting up two repos, one for hosting Hugo content(which is a normal repo) and the other(your public folder) as a git submodule which is a github pages repo. There is also a cool &lt;code&gt;deploy.sh&lt;/code&gt; script there which can be used to deploy to the Github pages repo.&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://help.github.com/articles/setting-up-your-pages-site-repository/#adding-your-custom-domain-to-a-cname-file&#34;&gt;Add CNAME&lt;/a&gt; file to Github Pages repo.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;We are almost done. Now we just need to add CNAME records to Cloudflare to point our domain name to github servers. I added two CNAME records. One with name @ and domain name pawanrawal.github.io and the other with name www and domain name pawanrawal.github.io&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;This made sure that both pawanrawal.com and www.pawanrawal.com are served by my Github pages repo.&lt;/p&gt;
+
+&lt;p&gt;I still have to figure out a bunch of things about the blog, but its in a good enough state now and I can start posting regularly to it.&lt;/p&gt;
+
+&lt;p&gt;Feel free to leave comments or ask any doubts you might have.&lt;/p&gt;
 </description>
     </item>
     
