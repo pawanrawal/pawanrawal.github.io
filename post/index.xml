@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on Pawan&#39;s blog</title>
-    <link>http://pawanrawal.com/post/</link>
+    <link>http://pawanrawal.github.io/post/</link>
     <description>Recent content in Posts on Pawan&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 16 Apr 2016 00:17:01 +0530</lastBuildDate>
-    <atom:link href="http://pawanrawal.com/post/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://pawanrawal.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>How to setup a blog</title>
-      <link>http://pawanrawal.com/post/welcome/</link>
+      <link>http://pawanrawal.github.io/post/welcome/</link>
       <pubDate>Sat, 16 Apr 2016 00:17:01 +0530</pubDate>
       
-      <guid>http://pawanrawal.com/post/welcome/</guid>
+      <guid>http://pawanrawal.github.io/post/welcome/</guid>
       <description>&lt;p&gt;For a long time I have wanted to setup my blog and share my learnings. This week I got down to getting it done. Through this post I want to help you setup your blog on your website.&lt;/p&gt;
 
 &lt;p&gt;There are multitude of ways of setting up your blog, you could set it up on Wordpress or just write posts on Medium. The method that I am going to outline below would mostly suit developers.&lt;/p&gt;
